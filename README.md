@@ -1,3 +1,3 @@
 # Best Web Series
 
-This is a fun app to search flag or click flag listed on the page to know country of flag. This app is created using React-js.
+This is a fun app to see best series of listed genres. This app is created using React-js.
