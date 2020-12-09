@@ -103,7 +103,7 @@ export default function App() {
     var rating = series.Rating;
     var htmlOfList = (
       <li>
-        <img src={imageUrl} />
+        <img alt="poster" src={imageUrl} />
         <div style={{ padding: "0rem 1rem" }}>
           <h3>{title}</h3>
           <p>{desc}</p>
@@ -116,7 +116,12 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>📺 Best Web Series</h1>
+      <h1>
+        <span role="img" aria-label="emoji">
+          📺
+        </span>{" "}
+        Best Web Series
+      </h1>
       <p>Checkout best web series. Select a genre to get started</p>
       <div>
         {genreNames.map((genre) => {
