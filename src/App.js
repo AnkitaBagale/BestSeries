@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles.css";
 
 //database
-var AllSeries = {
+const AllSeries = {
   Comedy: [
     {
       Title: "Friends ",
@@ -86,22 +86,22 @@ var AllSeries = {
   ]
 };
 
-var genreNames = Object.keys(AllSeries);
+const genreNames = Object.keys(AllSeries);
 
 export default function App() {
-  var [seriesList, setSeriesList] = useState(AllSeries.Crime);
+  const [seriesList, setSeriesList] = useState(AllSeries.Crime);
 
   function genreClickHandler(genre) {
-    var series = AllSeries[genre];
+    const series = AllSeries[genre];
     setSeriesList(series);
   }
 
   function getSeriesPost(series) {
-    var title = series.Title;
-    var imageUrl = series.Image;
-    var desc = series.Description;
-    var rating = series.Rating;
-    var htmlOfList = (
+    const title = series.Title;
+    const imageUrl = series.Image;
+    const desc = series.Description;
+    const rating = series.Rating;
+    const htmlOfList = (
       <li>
         <img alt="poster" src={imageUrl} />
         <div style={{ padding: "0rem 1rem" }}>
